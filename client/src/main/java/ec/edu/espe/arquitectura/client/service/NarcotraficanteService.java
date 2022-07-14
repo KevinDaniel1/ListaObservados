@@ -20,6 +20,7 @@ public class NarcotraficanteService {
 
     private final RestTemplate restTemplate;
 
+
     public NarcotraficanteService() {
         this.restTemplate = new RestTemplate(getClientHttpRequestFactory());
     }
@@ -29,6 +30,7 @@ public class NarcotraficanteService {
         TransferenciaDTO[] objectArray = response.getBody();
         List<TransferenciaDTO> transaferencia = Arrays.asList(objectArray);
      
+        
         return transaferencia;
     }
 
